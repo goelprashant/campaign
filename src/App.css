@@ -1,0 +1,138 @@
+body{
+  background: #adadad;
+}
+.app-conatiner{
+  background: #fff;
+  margin: 40px;
+}
+.campaign-element-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  border-bottom: 1px solid #eee;
+}
+.selected-campaign{
+  background: #DCF3F9;
+}
+.campaign-element-name{
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+.campaign-element-tools-panel{
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+.campaign-element-tools-panel > div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.campaign-list-container{
+  display: flex;
+  margin-top: 20px;
+  border-top: 1px solid #eee;
+}
+.campaign-elements{
+  min-width: 70%;
+  width: 100%;
+}
+.campaign-history-container{
+  width: 30%;
+  border-left: 1px solid #eee;
+  padding: 20px 20px 20px 60px;
+}
+.campaign-serial-num{
+  padding: 5px 10px;
+  background: #eee;
+  color: #00AADB;
+  border-radius: 50%;
+  font-size: 12px;
+}
+.campaign-info{
+  margin-left: 20px;
+}
+.camapign-name{
+  font-size: 20px;
+  font-weight: 600;
+  color: #a8a8a8;
+}
+.campaign-created{
+  font-size: 10px;
+  color: #aaa;
+}
+.line-through{
+  text-decoration: line-through;
+}
+.campaign-tool-text{
+  display: none;
+}
+.campaign-tool-text{
+  font-size: 10px;
+  color: #aaa;
+}
+.selected-campaign .campaign-tool-text{
+  display: block;
+}
+.selected-campaign .campaign-serial-num{
+  color: #fff;
+  background: #00AADB;
+}
+.create-button{
+  margin-left: 20px;
+  padding: 5px 15px;
+  background: #00AADB;
+  border: 0;
+  color: #fff;
+  border-radius: 2px;
+}
+.campaign-history-heading{
+  position: relative;
+  font-size: 20px;
+}
+.campaign-history-name{
+  font-size: 16px;
+  font-weight: bold;
+}
+.campaign-history-element{
+  font-size: 12px;
+  margin-top: 30px;
+  color: #a8a8a8;
+  position: relative;
+}
+.camapign-timeline-container{
+  margin-top: 50px;
+  border-left: 1px dotted #ccc;
+  padding-left: 40px;
+}
+.campaign-history-username{
+  color: #00AADB;
+}
+.campaign-header{
+  padding: 10px 30px;
+}
+.campaign-list-header{
+  padding: 10px 30px;
+  display: flex;
+  align-items: center;
+}
+.campaign-list-header button{
+  margin-left: 20px;
+  padding: 5px 15px;
+  background: #00AADB;
+  border: 0;
+  color: #fff;
+  border-radius: 2px;
+}
+.campaign-history-timeline-icon{
+  position: absolute;
+  top: 0;
+  left: -44px;
+}
+.campaign-history-heading-icon{
+  position: absolute;
+  top: 0;
+  left: -30px;
+}
