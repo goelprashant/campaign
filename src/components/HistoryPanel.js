@@ -8,7 +8,7 @@ class HistoryPanel extends Component {
 	getComment(el, index){
 		return(
 			<div key={el.type + index} className="campaign-history-element">
-				<div className="campaign-history-timeline-icon">C</div>
+				<div className="campaign-history-timeline-icon glyphicon glyphicon-edit"></div>
 				<div>
 					<strong>Comment </strong>
 					<span>Added</span>
@@ -27,7 +27,7 @@ class HistoryPanel extends Component {
 	getRename(el, index){
 		return(
 			<div ey={el.type + index} className="campaign-history-element">
-				<div className="campaign-history-timeline-icon">R</div>
+				<div className="campaign-history-timeline-icon glyphicon glyphicon-pencil"></div>
 				<div className="campaign-history-element-type">
 					<span>Campaign </span>
 					<strong>Renamed</strong>					
@@ -47,7 +47,7 @@ class HistoryPanel extends Component {
 	getCreated(el, index){
 		return(
 			<div key={el.type + index} className="campaign-history-element">
-				<div className="campaign-history-timeline-icon">C</div>
+				<div className="campaign-history-timeline-icon glyphicon glyphicon-plus"></div>
 				<div>
 					<span>Campaign </span>
 					<strong>Created</strong>
@@ -63,7 +63,7 @@ class HistoryPanel extends Component {
 	getStatus(el, index){
 		return(
 			<div key={el.type + index} className="campaign-history-element">
-				<div className="campaign-history-timeline-icon">P</div>
+				{el.type === 'paused'?<div className="campaign-history-timeline-icon glyphicon glyphicon-pause"></div>:<div className="campaign-history-timeline-icon glyphicon glyphicon-play"></div>}
 				<div>
 					<span>Campaign </span>
 					<strong>{el.type}</strong>
@@ -82,7 +82,7 @@ class HistoryPanel extends Component {
   	return (
   		<div className="campaign-history-container">
   			<div className="campaign-history-heading">
-  				<span className="campaign-history-heading-icon">H</span>
+  				<span className="campaign-history-heading-icon glyphicon glyphicon-repeat"></span>
   				<span>History</span>
   			</div>
   			<div className="campaign-history-name">{this.props.selectedCampaign.name}</div>

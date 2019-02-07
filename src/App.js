@@ -101,10 +101,14 @@ class App extends Component {
   render() {
     return (
       <div className="app-conatiner">
-        <div className="campaign-header">All Campaigns</div>
+        <div className="campaign-header">
+          <span className="glyphicon glyphicon-envelope"></span>
+          <span className="campaign-header-heading">All Campaigns</span>
+        </div>
         <div className="campaign-wrapper">          
           <div className="campaign-list-header">
-            <span>Campaign List</span>
+            <span className="glyphicon glyphicon-align-left"></span>
+            <span className="campaign-list-text">Campaign List</span>
             <button onClick={this.addNewCampaign}>+ Create New</button>
           </div>
           <div className="campaign-list-container">

@@ -54,20 +54,17 @@ class CampaignList extends Component {
             </div>
           </div>
           <div className="campaign-element-tools-panel">
-            <div onClick={(e) => this.toggleCampaign(e,index)}>
-              <span className="glyphicon glyphicon-pause">P</span>
-              {el.status === 'paused'?<span className="campaign-tool-text">Pause</span>:<span className="campaign-tool-text">Play</span>}
-            </div>
+            {el.status === 'paused'?<div onClick={(e) => this.toggleCampaign(e,index)}><span className="glyphicon glyphicon-pause"></span><span className="campaign-tool-text">Pause</span></div>:<div onClick={(e) => this.toggleCampaign(e,index)}><span className="glyphicon glyphicon-play"></span><span className="campaign-tool-text">Play</span></div>}
             <div onClick={(e) => this.commentCampaign(e,index)}>
-              <span>C</span>
+              <span className="glyphicon glyphicon-edit"></span>
               <span className="campaign-tool-text">Comment</span>
             </div>
             <div onClick={(e) => this.renameCampaign(e,index)}>
-              <span>R</span>
+              <span className="glyphicon glyphicon-pencil"></span>
               <span className="campaign-tool-text">Rename</span>
             </div>
             <div onClick={(e) => this.deleteCampaign(e,index)}>
-              <span>D</span>
+              <span className="glyphicon glyphicon-trash"></span>
               <span className="campaign-tool-text">Delete</span>
             </div>
           </div>
